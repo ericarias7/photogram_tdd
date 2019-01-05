@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Repository contains the code for a Test Driven Developed clone of Instagram, that I've named Photogram. 
 
 Things you may want to cover:
 
