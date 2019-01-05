@@ -3,8 +3,13 @@ require 'rails_helper'
 feature 'Deleting posts' do 
   background do 
     post = create(:post, caption: 'Abs for days.')
+    user = create(:user)
 
     visit '/'
+    click_link 'Log In'
+    fill_in 'Email', with: 'fancyfrank@gmail.com'
+    fill_in 'Password', with: 'illbeback'
+    click_button 'Log in'
 
     click_link(href: post_path(post))
     click_link 'Edit Post'
