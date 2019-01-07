@@ -3,6 +3,6 @@ FactoryBot.define do
     email 'fancyfrank@gmail.com'
     user_name 'Arnie'
     password 'illbeback'
-    id 5
+    sequence(:id) { |id| id }
   end
 end

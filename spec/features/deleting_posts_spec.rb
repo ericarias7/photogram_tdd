@@ -2,8 +2,8 @@ require 'rails_helper'
 
 feature 'Deleting posts' do 
   background do 
-    post = create(:post, caption: 'Abs for days.')
     user = create(:user)
+    post = create(:post, caption: 'Abs for days.', user_id: user.id)
 
     visit '/'
     click_link 'Log In'
